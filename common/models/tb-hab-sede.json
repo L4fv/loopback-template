@@ -1,0 +1,20 @@
+{
+  "name": "tb_hab_sede",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "room": {
+      "type": "string"
+    },
+    "id_sede_room": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

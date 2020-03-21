@@ -1,0 +1,35 @@
+{
+  "name": "tb_clientes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_sede": {
+      "type": "number"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "document": {
+      "type": "string"
+    },
+    "ti_document": {
+      "type": "number"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "celular": {
+      "type": "number"
+    },
+    "sexo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

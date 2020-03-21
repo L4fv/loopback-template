@@ -1,13 +1,13 @@
 module.exports = {
   apps: [{
-    name: 'template-js',
+    name: 'apisauna-js',
     script: 'server/server.js',
     instances: 1,
     exec_mode: 'fork',
     watch: true,
-    log_file: '~/.pm2/logs/template-outerr.log',
-    out_file: 'NULL', // ~/.pm2/logs/template-out.log
-    error_file: 'NULL', // ~/.pm2/logs/template-err.log
+    log_file: '~/.pm2/logs/apisauna-outerr.log',
+    out_file: 'NULL', // ~/.pm2/logs/apisauna-out.log
+    error_file: 'NULL', // ~/.pm2/logs/apisauna-err.log
     combine_logs: true,
     merge_logs: true,
     env: {

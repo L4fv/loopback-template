@@ -1,0 +1,79 @@
+CREATE TABLE `tb_price_mix` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+  `id_user` INT(11) NULL DEFAULT '0',
+  `id_mix_sede` INT(11) NULL DEFAULT '0',
+  `id_sede` INT(11) NULL DEFAULT '0',
+	`description` VARCHAR(50) NULL DEFAULT '0',
+	`hours` VARCHAR(50) NULL DEFAULT '0',
+	`price` FLOAT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+;
+
+CREATE TABLE `tb_price_mas` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+  `id_user` INT(11) NULL DEFAULT '0',
+  `id_mas_sede` INT(11) NULL DEFAULT '0',
+  `id_sede` INT(11) NULL DEFAULT '0',
+	`description` VARCHAR(50) NULL DEFAULT '0',
+	`hours` VARCHAR(50) NULL DEFAULT '0',
+	`price` FLOAT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+;
+
+CREATE TABLE `tb_price_hab` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+  `id_user` INT(11) NULL DEFAULT '0',
+  `id_hab_sede` INT(11) NULL DEFAULT '0',
+  `id_sede` INT(11) NULL DEFAULT '0',
+	`description` VARCHAR(50) NULL DEFAULT '0',
+	`hours` VARCHAR(50) NULL DEFAULT '0',
+	`price` FLOAT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+ENGINE=InnoDB
+;
+
+CREATE TABLE `tb_hab` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`room` VARCHAR(50) NULL DEFAULT '0',
+  `id_sede` INT(11) NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
+CREATE TABLE `tb_sede` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`department` VARCHAR(50) NOT NULL DEFAULT '0',
+	`province` VARCHAR(50) NOT NULL DEFAULT '0',
+	`detail` VARCHAR(50) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+
+
+CREATE TABLE `tb_product` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`id_sede` INT(11) NULL DEFAULT '0',
+	`id_category` INT(11) NULL DEFAULT '0',
+	`category` INT(11) NULL DEFAULT '0',
+	`Columna 5` INT(11) NULL DEFAULT '0',
+	`product` INT(11) NULL DEFAULT '0',
+	`quantity` INT(11) NULL DEFAULT '0',
+	`stock` INT(11) NULL DEFAULT '0',
+	`price` INT(11) NULL DEFAULT '0',
+	`created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1

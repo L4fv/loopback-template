@@ -1,0 +1,23 @@
+{
+  "name": "tb_sede",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "department": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

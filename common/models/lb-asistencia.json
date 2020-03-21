@@ -1,0 +1,75 @@
+{
+  "name": "lb_asistencia",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dni": {
+      "type": "number",
+      "default": "73595177"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "asistencia": {
+      "accepts": [
+        {
+          "arg": "data",
+          "type": "object",
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "root": true
+      },
+      "http": {
+        "verb": "post"
+      }
+    },
+    "consultarasistencia": {
+      "accepts": [
+        {
+          "arg": "sede",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "root": true
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "consultarAsistenciaPorDia": {
+      "accepts": [
+        {
+          "arg": "sede",
+          "type": "number",
+          "required": true
+        },
+        {
+          "arg": "fecha",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "object",
+        "root": true
+      },
+      "http": {
+        "path": "/:sede/:fecha",
+        "verb": "get"
+      }
+    }
+  }
+}

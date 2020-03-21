@@ -1,0 +1,20 @@
+{
+  "name": "tb_mix_sede",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mixto": {
+      "type": "string"
+    },
+    "id_sede": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

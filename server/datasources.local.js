@@ -1,12 +1,15 @@
 'use strict';
 
 module.exports = {
-  WfPostgres: {
-    connector: 'postgresql',
-    host: 'sd1.accesocrediticio.com',
-    port: 5439,
-    user: 'ksilva',
-    password: 'ksilva159',
-    database: 'WFACR',
-  },
+
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "url": "",
+    "database": "sauna",
+    "password": "triv3l4pp",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
+  }
 };

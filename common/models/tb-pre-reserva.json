@@ -1,0 +1,92 @@
+{
+  "name": "tb_pre_reserva",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_sede": {
+      "type": "number"
+    },
+    "id_user": {
+      "type": "number"
+    },
+    "ti_document": {
+      "type": "string"
+    },
+    "document": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "tipoCliente": {
+      "type": "number"
+    },
+    "idCliente": {
+      "type": "number"
+    },
+    "check_in": {
+      "type": "string"
+    },
+    "observation": {
+      "type": "string"
+    },
+    "importeTotal": {
+      "type": "string"
+    },
+    "importeAbonado": {
+      "type": "string"
+    },
+    "tipoPago": {
+      "type": "number"
+    },
+    "efectivo": {
+      "type": "number"
+    },
+    "tarjeta": {
+      "type": "number"
+    },
+    "transferencia": {
+      "type": "number"
+    },
+    "finalizado": {
+      "type": "number"
+    },
+    "mixtos": {
+      "type": "object"
+    },
+    "privados": {
+      "type": "object"
+    },
+    "masajes": {
+      "type": "object"
+    },
+    "productos": {
+      "type": "object"
+    },
+    "adelanto": {
+      "type": "number"
+    },
+    "tipoVenta": {
+      "type": "number"
+    },
+    "fecha_reservada": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "descuento": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

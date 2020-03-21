@@ -1,0 +1,29 @@
+{
+  "name": "reportes",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "porFechas" : {
+      "accepts" : [{
+        "arg": "data",
+        "type": "object",
+        "http": {
+          "source": "body"
+        }
+      }],
+      "http": {
+        "verb": "post"
+      },
+      "returns": {
+        "root": true
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "tb_colaborador",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_sede": {
+      "type": "number"
+    },
+    "id_colaborador": {
+      "type": "number"
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "apellidos": {
+      "type": "string"
+    },
+    "usuario": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "id_role": {
+      "type": "number"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "id_documento": {
+      "type": "number"
+    },
+    "documento": {
+      "type": "string"
+    },
+    "ruc": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "string"
+    },
+    "user_sunat": {
+      "type": "string"
+    },
+    "clave_sunat": {
+      "type": "string"
+    },
+    "fecha_ingreso": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "number"
+    },
+    "id_turno": {
+      "type": "number"
+    },
+    "sueldo": {
+      "type": "number"
+    },
+    "numero_banco": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "turno": {
+      "type": "number"
+    },
+    "nombreTurno": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

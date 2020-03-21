@@ -1,0 +1,24 @@
+##################################################################
+
+select id_user, id_hab_sede, room hab_sede, id_sede, description, hours, price
+from tb_hab , tb_price_hab
+where id_hab_sede = 4
+limit 1
+
+
+
+
+ALTER TABLE tb_price_mas
+ADD created_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+ADD updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+
+
+https://loopback.io/doc/en/lb3/Model-definition-JSON-file.html
+
+
+
+http://68.183.127.54:3000/api/tb_colaboradors?filter={"where":{"or":[{"nombres":"asd"},{"password":"0"}]}}
+
+
+http://68.183.127.54:3000/api/tb_reservas?filter={"where":{"and":[{"check_in":{"like":"*2019*"}},{"check_in_time":"*01:18*"}]}}

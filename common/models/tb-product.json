@@ -1,0 +1,47 @@
+{
+  "name": "tb_product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_sede": {
+      "type": "number"
+    },
+    "id_category": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    },
+    "idInventario": {
+      "type": "string"
+    },
+    "detalleInventario": {
+      "type": "string"
+    },
+    "fechaActualizacion": {
+      "type": "string"
+    },
+    "frecuente": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

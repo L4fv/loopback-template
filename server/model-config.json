@@ -12,5 +12,96 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "tb_price_mix": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_price_mas": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_price_hab": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_hab_sede": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_sede": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_product": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_reserva": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_colaborador": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_mas": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "tb_clientes": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_gastos_sede": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_mas_sede": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_mix_sede": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_usuarios": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "lb_asistencia": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tb_pre_reserva": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "reportes": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

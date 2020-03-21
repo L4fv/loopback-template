@@ -1,0 +1,50 @@
+{
+  "name": "tb_gastos_sede",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_sede": {
+      "type": "number"
+    },
+    "id_tipo_gasto": {
+      "type": "number"
+    },
+    "tipo_gasto": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "importe": {
+      "type": "number"
+    },
+    "id_sub_tipo_gasto": {
+      "type": "number"
+    },
+    "tipoPago": {
+      "type": "number"
+    },
+    "nombrePago": {
+      "type": "string"
+    },
+    "idArea": {
+      "type": "number"
+    },
+    "nombreArea": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

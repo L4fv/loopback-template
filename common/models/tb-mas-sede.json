@@ -1,0 +1,20 @@
+{
+  "name": "tb_mas_sede",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "massage": {
+      "type": "string"
+    },
+    "id_sede_mas": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
